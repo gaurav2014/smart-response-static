@@ -7,6 +7,35 @@
 body{
     font-family:TradeGothic;
     background-color: rgb(237, 238, 239);
+    padding-bottom: 70px;
+    color:rgb(38, 38, 38);
+}
+
+#footer{
+    background-color:rgb(210, 211, 213);
+    width: 100%;
+}
+
+.footer-list-item{
+    padding-top:10px;
+}
+
+.footer-list-item:last-child{
+    border-right:none;
+}
+
+.footer-links,
+.footer-links:hover,
+.footer-links:visited,
+.footer-links:active{
+    font-size:23px;
+    color:rgb(38, 38, 38);
+    text-transform:capitalize;
+    background-color:transparent;
+}
+
+.nav > li > a.footer-links:hover, .nav > li > a.footer-links:focus {
+    background-color:transparent;
 }
 
 .navbar-wrapper {
@@ -96,4 +125,25 @@ h2{
     -moz-transform: skew(40deg);
     -ms-transform: skew(40deg);
     transform: skew(40deg);
+}
+
+/*
+/* Media Queries *
+******************/
+
+@media (min-width: 768px){
+    #footer{
+        position: fixed;
+        bottom: 0;
+        height: 60px;
+        z-index: 15;
+    }
+
+    .nav-justified {
+        max-height: 52px;
+    }
+
+    .footer-list-item{
+        border-right:2px solid rgb(237, 238, 239);
+    }
 }
