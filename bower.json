@@ -1,0 +1,29 @@
+{
+  "name": "smart-response-static",
+  "version": "0.0.0",
+  "homepage": "https://github.com/treyeckels/smart-response-static",
+  "authors": [
+    "Trey Eckels <trey.eckels@gmail.com>"
+  ],
+  "description": "Smart Response 2.0 Public Facing Site Static Markup",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "underscore": "*",
+    "backbone": "*",
+    "bootstrap": "*",
+    "modernizr": "*",
+    "requirejs-bower": "*"
+  } 
+}
