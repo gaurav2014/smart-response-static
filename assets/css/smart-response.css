@@ -1,0 +1,99 @@
+@font-face {
+    font-family: TradeGothic;
+    src: local('TradeGothic'),
+    url(../fonts/TRADEGOTHICLTSTD.OTF) format('opentype');
+}
+
+body{
+    font-family:TradeGothic;
+    background-color: rgb(237, 238, 239);
+}
+
+.navbar-wrapper {
+    /*position: fixed;*/
+    width:100%;
+    margin-top:0;
+}
+
+.navbar-wrapper .container {
+    width:100%;
+    padding:0;
+    border-radius:0;
+}
+
+.navbar-wrapper .navbar {
+    height:110px;
+    background-color:rgb(0, 0, 0);
+    border-radius:0;
+}
+
+h2{
+    font-size: 23px;
+    color:rgb(38, 38, 38);
+    text-transform: uppercase;
+}
+
+.carousel {
+    margin-bottom: 0;
+}
+
+.marketing{
+    position:relative;
+    padding-left: 2%;
+
+}
+
+.marketing .col-lg-4{
+    text-align: left;
+}
+
+.marketing .col-lg-4 p{
+    font-size:17px;
+    margin-left:0;
+}
+
+.marketing .col-lg-4 h2{
+    background-image:url(../images/sprite-icons.png);
+    background-repeat: no-repeat;
+    background-position:left -530px;
+    padding:15px 0 5px 90px;
+}
+
+.marketing .col-lg-4 h2.organization{
+    background-position:left -259px;
+}
+
+.marketing .col-lg-4 h2.donate{
+    background-position:left top;
+}
+
+#how-it-works{
+    position: absolute;
+    left: 0;
+    top: -44px;
+    background-color: rgb(237, 238, 239);
+    width: 230px;
+    height: 44px;
+}
+
+#how-it-works p{
+    position:absolute;
+    left:10%;
+    top:20%;
+    font-size:25px;
+    text-transform: capitalize;
+}
+
+.tab:after {
+    content:"";
+    position:absolute;
+    background-color: rgb(237, 238, 239);
+    top:0;
+    right:-25px;
+    bottom: -2px;
+    width: 50px;
+    -webkit-transform: skew(40deg);
+    -moz-transform: skew(40deg);
+    -ms-transform: skew(40deg);
+    transform: skew(40deg);
+}
