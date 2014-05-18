@@ -1,19 +1,134 @@
-@font-face {
-    font-family: TradeGothic;
-    src: local('TradeGothic'),
-    url(../fonts/TRADEGOTHICLTSTD.OTF) format('opentype');
+
+@font-face{
+    font-family:TradeGothic;
+    src: url(../fonts/TradeGothicLTStd.eot); /* IE */
+    src:local("TradeGothicLTStd"), url(../fonts/TRADEGOTHICLTSTD.OTF) format("truetype");
+}
+
+@font-face{
+    font-family:TradeGothicBold;
+    src: url(../fonts/TradeGothicLTStd-Bold.eot);
+    src:local("TradeGothicLTStd-Bold"), url(../fonts/TRADEGOTHICLTSTD-BOLD.OTF) format("truetype");
+}
+
+@font-face{
+    font-family:TradeGothicThin;
+    src: url(../fonts/TradeGothicLTStd-Light.eot);
+    src:local("TradeGothicLTStd-Light"), url(../fonts/TRADEGOTHICLTSTD-LIGHT.OTF) format("truetype");
+}
+
+@font-face{
+    font-family:TradeGothicBoldCond20;
+    src: url(../fonts/tradegothicltstd-bdcn20-webfont.eot);
+    src:local("TradeGothicLTStd-BdCn20"), url(../fonts/TRADEGOTHICLTSTD-BDCN20.OTF) format("truetype");
+}
+
+@font-face{
+    font-family:TradeGothicBoldTwo;
+    src: url(../fonts/tradegothicltstd-bd2-webfont.eot);
+    src:local("TradeGothicLTStd-Bd2"), url(../fonts/TradeGothicLTStd-Bd2.otf) format("truetype");
+}
+
+@font-face{
+    font-family:TradeGothicCond18;
+    src: url(../fonts/tradegothicltstd-cn18-webfont.eot);
+    src:local("TradeGothicLTStd-Cn18.otf"), url(../fonts/TradeGothicLTStd-Cn18.otf) format("truetype");
 }
 
 body{
-    font-family:TradeGothic;
+    font-family:TradeGothic,arial,helvetica, sans-serif;
     background-color: rgb(237, 238, 239);
     padding-bottom: 70px;
     color:rgb(38, 38, 38);
 }
 
+
+ul.inline-list{
+    list-style-type: none;
+}
+
+ul.inline-list li {
+    float: left;
+    margin-right: 10px;
+}
+
+#quickNav{
+    overflow:hidden;
+    margin-top:30px;
+    padding-left:0;
+    display:none;
+}
+
+#quickNav a,
+a.button,
+a.button:visited,
+a.button:hover,
+a.button span,
+#mainNav li:hover a,
+#mainNav li:hover a:visited,
+#mainNav li:hover a:hover,
+#mainNav li:hover a span,
+#mainNav li:hover span.arrow,
+#mainNav li.on a,
+#mainNav li.on a:visited,
+#mainNav li.on a:hover,
+#mainNav li.on a span,
+#mainNav li.on span.arrow,
+.social_bar li a {
+    background-image: url("../images/sprite_button.png");
+    background-repeat: no-repeat;
+}
+
+
+#quickNav a {
+    text-indent: -10000px;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-position: -69px 3px;
+}
+
+#quickNav a.tsunamis {
+    background-position: -103px 3px;
+}
+
+#quickNav a.fires {
+    background-position: -138px 3px;
+}
+
+#quickNav a.hurricanes {
+    background-position: -173px 3px;
+}
+
+.navbar{
+    color:rgb(238, 255, 255);
+}
+
+p.pageTitle {
+    font-size: 3.2em;
+    font-family: TradeGothicCond18,arial,helvetica, sans-serif;
+    float:left;
+    margin-top:15px;
+}
+
+p.pageTitle span,
+p.pageTitle span a {
+    color: rgb(255, 241, 23);
+}
+
+p.pageTitle a,
+p.pageTitle a,
+p.pageTitle a:hover,
+p.pageTitle a:visited,
+p.pageTitle a:active{
+    color:rgb(238, 255, 255);
+    text-decoration:none;
+}
+
 #footer{
     background-color:rgb(210, 211, 213);
     width: 100%;
+    height:auto;
 }
 
 .footer-list-item{
@@ -28,7 +143,7 @@ body{
 .footer-links:hover,
 .footer-links:visited,
 .footer-links:active{
-    font-size:23px;
+    font-size:14px;
     color:rgb(38, 38, 38);
     text-transform:capitalize;
     background-color:transparent;
@@ -39,21 +154,19 @@ body{
 }
 
 .navbar-wrapper {
-    /*position: fixed;*/
+    background-color:rgb(38, 38, 38);
     width:100%;
     margin-top:0;
 }
 
 .navbar-wrapper .container {
-    width:100%;
-    padding:0;
     border-radius:0;
 }
 
 .navbar-wrapper .navbar {
     height:110px;
-    background-color:rgb(0, 0, 0);
     border-radius:0;
+    padding-top:20px;
 }
 
 h2{
@@ -62,8 +175,15 @@ h2{
     text-transform: uppercase;
 }
 
-.carousel {
-    margin-bottom: 0;
+.carousel{
+    margin-bottom:0;
+}
+
+
+.carousel,
+.carousel .item,
+.carousel-inner > .item > img {
+    height: 445px;
 }
 
 .marketing{
@@ -132,10 +252,14 @@ h2{
 ******************/
 
 @media (min-width: 768px){
+    #quickNav{
+        display: block;
+    }
+
+
     #footer{
         position: fixed;
         bottom: 0;
-        height: 60px;
         z-index: 15;
     }
 
@@ -145,5 +269,18 @@ h2{
 
     .footer-list-item{
         border-right:2px solid rgb(237, 238, 239);
+    }
+}
+
+@media (min-width: 1190px){
+    #footer{
+        height: 60px;
+    }
+
+    .footer-links,
+    .footer-links:hover,
+    .footer-links:visited,
+    .footer-links:active{
+        font-size:23px;
     }
 }
