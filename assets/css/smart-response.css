@@ -159,7 +159,7 @@ p.pageTitle a:active{
 #utility-links > li >  .utility-link:active{
     color:rgb(213, 213, 213);
     padding-left:0;
-    padding-right:30px;
+
     padding-top:15px;
     font-size:18px;
 }
