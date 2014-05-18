@@ -43,6 +43,15 @@ body{
 }
 
 
+.btn-smart-response{
+    background-color:rgb(255, 242, 0);
+    border-radius: 0;
+    color:rgb(38, 38, 38);
+    font-size:20px;
+    padding: 4px 9px;
+}
+
+
 ul.inline-list{
     list-style-type: none;
 }
@@ -125,6 +134,46 @@ p.pageTitle a:active{
     text-decoration:none;
 }
 
+#site-search-container{
+    line-height:1px;
+}
+
+#site-search{
+    background-color:transparent;
+    border-radius: 0;
+    color: rgb(238, 255, 255);
+}
+
+#utility-links{
+    margin-top:10px;
+    padding-left:15px;
+}
+
+#utility-links > li{
+    float:left;
+}
+
+#utility-links > li >  .utility-link,
+#utility-links > li >  .utility-link:hover,
+#utility-links > li >  .utility-link:visited,
+#utility-links > li >  .utility-link:active{
+    color:rgb(213, 213, 213);
+    padding-left:0;
+    padding-right:30px;
+    padding-top:15px;
+    font-size:18px;
+}
+
+
+#utility-links > li > .utility-link:hover{
+    background-color:transparent;
+}
+
+#utility-links > li > button{
+    width:80px;
+    height:30px;
+}
+
 #footer{
     background-color:rgb(210, 211, 213);
     width: 100%;
@@ -149,7 +198,8 @@ p.pageTitle a:active{
     background-color:transparent;
 }
 
-.nav > li > a.footer-links:hover, .nav > li > a.footer-links:focus {
+.nav > li > a.footer-links:hover,
+.nav > li > a.footer-links:focus {
     background-color:transparent;
 }
 
@@ -252,10 +302,10 @@ h2{
 ******************/
 
 @media (min-width: 768px){
-    #quickNav{
-        display: block;
-    }
 
+    #utility-links{
+        padding-left:0;
+    }
 
     #footer{
         position: fixed;
@@ -273,6 +323,10 @@ h2{
 }
 
 @media (min-width: 1190px){
+    #quickNav{
+        display: block;
+    }
+
     #footer{
         height: 60px;
     }
