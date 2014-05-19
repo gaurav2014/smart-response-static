@@ -4,7 +4,8 @@
   "description": "Smart Response 2.0 Public Facing Site Static Markup",
   "main": "index.js",
   "dependencies": {
-
+      "grunt": "0.4.1",
+      "grunt-contrib-jshint": "0.10.0"
   },
   "devDependencies": {
     "grunt": "0.4.1",
