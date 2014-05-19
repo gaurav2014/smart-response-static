@@ -1,3 +1,12 @@
+/****
+*
+* Table of contents:
+* @font-face
+*
+*
+*
+
+/*********************************** @font-face ******************************************************/
 
 @font-face{
     font-family:TradeGothic;
@@ -34,6 +43,8 @@
     src: url(../fonts/tradegothicltstd-cn18-webfont.eot);
     src:local("TradeGothicLTStd-Cn18.otf"), url(../fonts/TradeGothicLTStd-Cn18.otf) format("truetype");
 }
+
+/*********************************** STRUCTURAL ******************************************************/
 
 body{
     font-family:TradeGothic,arial,helvetica, sans-serif;
@@ -284,6 +295,8 @@ h2{
     text-transform: capitalize;
 }
 
+/*********************************** TABS ******************************************************/
+
 .tab:after {
     content:"";
     position:absolute;
@@ -298,9 +311,7 @@ h2{
     transform: skew(40deg);
 }
 
-/*
-/* Media Queries *
-******************/
+/*********************************** MEDIA QUERIES ******************************************************/
 
 @media (min-width: 768px){
 
@@ -379,9 +390,7 @@ h2{
     font-family:TradeGothicLTStd-BdCn20;
 }
 
-/**
-    FLEXSLIDER OVERRIDES
-****/
+/*********************************** VENDOR OVERRIDES ******************************************************/
 
 .flexslider{
     margin:0;
