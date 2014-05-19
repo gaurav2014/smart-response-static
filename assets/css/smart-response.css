@@ -269,10 +269,11 @@ h2{
 #how-it-works{
     position: absolute;
     left: 0;
-    top: -44px;
+    top: -41px;
     background-color: rgb(237, 238, 239);
     width: 230px;
     height: 44px;
+    z-index:2;
 }
 
 #how-it-works p{
@@ -320,6 +321,11 @@ h2{
     .footer-list-item{
         border-right:2px solid rgb(237, 238, 239);
     }
+
+    #pageCover{
+        height:500px;
+    }
+
 }
 
 @media (min-width: 1190px){
@@ -337,4 +343,63 @@ h2{
     .footer-links:active{
         font-size:23px;
     }
+
+    #pageCover{
+        height:700px;
+    }
+
 }
+
+#pageCover{
+    position:relative;
+    height:500px;
+    background-color:rgb(0,0,0);
+    border-radius:0;
+}
+
+#pageCover .progress-bar{
+    width:50%;
+    height:20px;
+    position:absolute;
+    top:40%;
+    left:20%;
+    border-radius:3px;
+}
+
+.carouselCaption{
+    position:absolute;
+    left:18%;
+    top:43%;
+    z-index:2;
+}
+.carouselCaption h2{
+    color:rgb(250,250,250);
+    font-size:40px;
+    text-transform:none;
+    font-family:TradeGothicLTStd-BdCn20;
+}
+
+/**
+    FLEXSLIDER OVERRIDES
+****/
+
+.flexslider{
+    margin:0;
+    border:none;
+    position:relative;
+}
+
+.flexslider .slides{
+    min-height:200px;
+}
+
+
+.flex-direction-nav,
+.flex-control-paging{
+    display:none;
+}
+
+
+
+
+

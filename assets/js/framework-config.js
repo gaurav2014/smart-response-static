@@ -5,7 +5,9 @@ define('framework-config',[], function(){
             "jquery": "vendor/jquery/dist/jquery.min",
             "jquery.bootstrap": "vendor/bootstrap/dist/js/bootstrap.min",
             "underscore": "vendor/underscore/underscore",
-            "docs": "libs/docs.min"
+            "vendor": "vendor",
+            "libs": "libs",
+            "flexslider": "libs/FlexSlider-version-2.2/jquery.flexslider"
         },
 
         "shim": {
@@ -19,9 +21,9 @@ define('framework-config',[], function(){
             "underscore": {
                 exports: '_'
             },
-            "docs": {
-                deps: ['jquery','bootstrap'],
-                exports: 'Holder'
+            "flexslider": {
+                deps: ['jquery'],
+                exports: '$.flexslider'
             }
         }
     };

@@ -12,10 +12,16 @@ require(['framework-config'], function(frameworkConfig){
      */
     require([
         'jquery',
-        'jquery.bootstrap'
+        'jquery.bootstrap',
+        'flexslider'
     ],
-        function() {
-
+        function($) {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function(){
+                    $('#pageCover').hide();
+                }
+            });
         });
 });
 

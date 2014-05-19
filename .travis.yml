@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 0.8
+  - '0.10'
+env:
+  global:
+    - secure:
+      - "FTP_USER=XOEMhGzqWlQzRicE0RzyHnVtI7YoftC6F6/W3Vj9XYDyjC8luo9MI/uS4qCI6NH6sz7Id5v46xXKzeNRFpoC6jOw9qLO2w+nlBpkHDGvXjChcVs7Edz1CumiwRMaBWWf0E/BWNtdEknmkR+O3z5R/ipovWATEskToZwN65oIwfs="
+      - "FTP_PASSWORD=b+gpMtLuNhkHBXMxQWRfZ66sXyjnezjt3fTj1dEcScsw4jmrR1VuZzIoMeZnsvNVASv0q/1GoFmGUFyl3tvX8vZBzm0TRzOxfAZCFpo5UwMm4gU0dvrBrWdBq3YnogYEd3wAmv5KOjzzh4/zJnmFRyQkf3WRAGc6i1081oZhHd4="
+      - "FTP=Y5aCGwW3Q5osWi16hUiq0EpFgL+ZvwW0+dBPNFyi9+BWvywS6XImLhKcFEceNps8+DKe7ABYsp+FUMvqRisqsmnOnsRcVAclpdRVn/jfDhf45c9xpcOk02LUWV9rDg1bKmR/wI/tKtZB/0tc89QGtDNcFNCunD3v6nMP9uutj98="
+after_success:
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp:$FTP"
+
+notifications:
+  email:
+    recipients:
+      - trey.eckels@gmail.com
+      - Ben@disasteraccountability.org
