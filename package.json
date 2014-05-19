@@ -4,15 +4,13 @@
   "description": "Smart Response 2.0 Public Facing Site Static Markup",
   "main": "index.js",
   "dependencies": {
-      "grunt": "0.4.1",
-      "grunt-contrib-jshint": "0.10.0"
+      "bower": "^1.3.3",
+      "travis-encrypt": "0.3.0"
   },
   "devDependencies": {
     "grunt": "0.4.1",
     "grunt-cli": "0.1.9",
-    "grunt-contrib-jshint": "0.10.0",
-    "bower": "^1.3.3",
-    "travis-encrypt": "0.3.0"
+    "grunt-contrib-jshint": "0.10.0"
   },
   "scripts": {
     "test": "grunt --verbose"
@@ -21,7 +19,7 @@
     "type": "git",
     "url": "git://github.com/treyeckels/smart-response-static.git"
   },
-  "author": "",
+  "author": "Trey Eckels",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/treyeckels/smart-response-static/issues"
