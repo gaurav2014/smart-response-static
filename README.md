@@ -36,8 +36,8 @@ Since there will be many developers from different backgrounds contributing to a
 #### HTML/CSS Layout/Markup
 
 1. We are using Twitter Bootstrap (http://getbootstrap.com/) for the majority of markup, layout, css. This will help facilitate meeting the project's quick turn-around time as well as ensuring that we are all using the same class names, ids, semantic markup structures, grid layouts, etc. So instead of laying out items with your own floats, etc, instead use Boostrap's extensive grid layout system (http://getbootstrap.com/css/#grid). We will rely on their grid system, for the most part and where-ever we can, for the responsiveness of the site.
-
 2. Try to use CSS where possible instead of JS or images. (e.g. css animations instead of JS powered where possible, CSS drop-shadows instead of images, CSS shapes instead of images, etc)
+3. We are using rgb(a) for colors instead of hexidecimal. See http://hex2rgba.devoth.com/ for easy conversions.
 
 Do not worry about the number of files, they will all be concatenated into 1 and minified later.
 
