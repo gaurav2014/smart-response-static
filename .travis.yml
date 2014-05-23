@@ -3,11 +3,9 @@ node_js:
   - "0.10"
 env:
   global:
-    - secure: "XOEMhGzqWlQzRicE0RzyHnVtI7YoftC6F6/W3Vj9XYDyjC8luo9MI/uS4qCI6NH6sz7Id5v46xXKzeNRFpoC6jOw9qLO2w+nlBpkHDGvXjChcVs7Edz1CumiwRMaBWWf0E/BWNtdEknmkR+O3z5R/ipovWATEskToZwN65oIwfs="
-    - secure: "b+gpMtLuNhkHBXMxQWRfZ66sXyjnezjt3fTj1dEcScsw4jmrR1VuZzIoMeZnsvNVASv0q/1GoFmGUFyl3tvX8vZBzm0TRzOxfAZCFpo5UwMm4gU0dvrBrWdBq3YnogYEd3wAmv5KOjzzh4/zJnmFRyQkf3WRAGc6i1081oZhHd4="
-    - secure: "Y5aCGwW3Q5osWi16hUiq0EpFgL+ZvwW0+dBPNFyi9+BWvywS6XImLhKcFEceNps8+DKe7ABYsp+FUMvqRisqsmnOnsRcVAclpdRVn/jfDhf45c9xpcOk02LUWV9rDg1bKmR/wI/tKtZB/0tc89QGtDNcFNCunD3v6nMP9uutj98="
+
 after_success:
-    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp:$FTP"
+    "curl --ftp-create-dirs -T TRAVIS_BUILD_DIR/Gruntfile.js -u secure: E6re0Ttj35AGh5wiQ+pqk+2/AIhVQKuo/Apmgvwyb9dAAUGmanG/j1RJfdNBwhWKynOFac01qaBI2MHzQiF0QQfhd+Z/yqQXnxVmbCVF4vEK1QdPO+NPYYJ+sLqbUCiSZy3RvOTToaZZD4dUchFmlWZ9PULWVqSl2HP4HjnNW6k=:secure: KSBwuUQpfyn4v8aDV2fWlo+UF3tCL9IMGpPy+pgu7rBRAJP/wHzeqyxCF/ZWJnqtWHSqgiqnbsEzB6xfpqi1toRcVHizriletNexHlPZB3fXQtHFAs7wRu3hthWp8lJT6FfvU+L+6GIA4nEbsIxHvSaB/AT77av/K0C632X1F2o= ftp:secure: Uc/sC33XU/c5huxpQdM44G7CGwZAXqCU1MRKY8Ijy5GDXfR35fDPPOy/7ka3RI3Kz42Tw9iy+t6HrmuQS7Yvs67NGIZc/BNhXEfxxIOz4vvdMFI2nZN3C8HomM5Mz0iWhDumoOHyNZQ//g0cL0Kvay8DraRJeHp+r0bD8LHyPZc="
 
 notifications:
   email:
