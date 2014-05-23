@@ -7,7 +7,7 @@ env:
     - secure: "UA/CRDbTynqEs5vW4c/JCGLjUDVqzOk9PcejAAFT7JlXWcJTp7fsR0/xzWxqZ3FujpwKG+q+6nfLuLRDQkl25J3c/rK4hRB1sIyyDOOL4poQa1BnPspVNKNn1zLYMxq0jtGuualAH5N9Ye/FAOMSQl9oNL9vYrQyNy3J/5tgZpM="
     - secure: "b4orxEqKbdT0TtZ5ThLUZwKaaUkDTECjL7fUMSeoSr0tjq/4rIuaLRX5D8NCKz+/0rV21ayjvUWKp+gu8eQkherokvRkJ9RDUXjHlJ7/+KlE2Amq5hF4S1ABaWE40rxNxK46pX7pgtxz56CXWUSbHE1/bPkpJN4D7DMVdjYHhEg="
 after_success:
-    "find dist/.* -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD $FTP{} ;"
+    "find dist/.* -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD $FTP{} +"
 
 notifications:
   email:
