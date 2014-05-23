@@ -3,11 +3,12 @@ node_js:
   - "0.10"
 env:
   global:
-    - "BRANCH=${TRAVIS_BRANCH////-}"
+    - "BRANCH=${TRAVIS_BRANCH////-}/"
     - secure: "UCg7lECCNYm/LwUgH9xlHmhAuyag4HAanXe3UKfK8ccWyXbr68CB44bmxE3/oL6gDgJ7blP1RPnU9ewm4FudPKQQfJmutSYgEzZenXZJbD8egIBxshRe4PNNbD5gYbu2tj6cgobL4jweD9i0JHT/tnEp68oUw2E/uA44dA/gcvk="
     - secure: "UA/CRDbTynqEs5vW4c/JCGLjUDVqzOk9PcejAAFT7JlXWcJTp7fsR0/xzWxqZ3FujpwKG+q+6nfLuLRDQkl25J3c/rK4hRB1sIyyDOOL4poQa1BnPspVNKNn1zLYMxq0jtGuualAH5N9Ye/FAOMSQl9oNL9vYrQyNy3J/5tgZpM="
     - secure: "b4orxEqKbdT0TtZ5ThLUZwKaaUkDTECjL7fUMSeoSr0tjq/4rIuaLRX5D8NCKz+/0rV21ayjvUWKp+gu8eQkherokvRkJ9RDUXjHlJ7/+KlE2Amq5hF4S1ABaWE40rxNxK46pX7pgtxz56CXWUSbHE1/bPkpJN4D7DMVdjYHhEg="
 after_success:
+    "curl --ftp-create-dirs -T -u $FTP_USER:$FTP_PASSWORD $FTP$BRANCH"
     "find dist/.* -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD $FTP$BRANCH{} ';'"
 
 notifications:
