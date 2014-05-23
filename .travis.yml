@@ -3,9 +3,11 @@ node_js:
   - "0.10"
 env:
   global:
-
+    - secure: "UCg7lECCNYm/LwUgH9xlHmhAuyag4HAanXe3UKfK8ccWyXbr68CB44bmxE3/oL6gDgJ7blP1RPnU9ewm4FudPKQQfJmutSYgEzZenXZJbD8egIBxshRe4PNNbD5gYbu2tj6cgobL4jweD9i0JHT/tnEp68oUw2E/uA44dA/gcvk="
+    - secure: "UA/CRDbTynqEs5vW4c/JCGLjUDVqzOk9PcejAAFT7JlXWcJTp7fsR0/xzWxqZ3FujpwKG+q+6nfLuLRDQkl25J3c/rK4hRB1sIyyDOOL4poQa1BnPspVNKNn1zLYMxq0jtGuualAH5N9Ye/FAOMSQl9oNL9vYrQyNy3J/5tgZpM="
+    - secure: "b4orxEqKbdT0TtZ5ThLUZwKaaUkDTECjL7fUMSeoSr0tjq/4rIuaLRX5D8NCKz+/0rV21ayjvUWKp+gu8eQkherokvRkJ9RDUXjHlJ7/+KlE2Amq5hF4S1ABaWE40rxNxK46pX7pgtxz56CXWUSbHE1/bPkpJN4D7DMVdjYHhEg="
 after_success:
-    "curl --ftp-create-dirs -T TRAVIS_BUILD_DIR/Gruntfile.js -u secure: E6re0Ttj35AGh5wiQ+pqk+2/AIhVQKuo/Apmgvwyb9dAAUGmanG/j1RJfdNBwhWKynOFac01qaBI2MHzQiF0QQfhd+Z/yqQXnxVmbCVF4vEK1QdPO+NPYYJ+sLqbUCiSZy3RvOTToaZZD4dUchFmlWZ9PULWVqSl2HP4HjnNW6k=:secure: KSBwuUQpfyn4v8aDV2fWlo+UF3tCL9IMGpPy+pgu7rBRAJP/wHzeqyxCF/ZWJnqtWHSqgiqnbsEzB6xfpqi1toRcVHizriletNexHlPZB3fXQtHFAs7wRu3hthWp8lJT6FfvU+L+6GIA4nEbsIxHvSaB/AT77av/K0C632X1F2o= ftp:secure: Uc/sC33XU/c5huxpQdM44G7CGwZAXqCU1MRKY8Ijy5GDXfR35fDPPOy/7ka3RI3Kz42Tw9iy+t6HrmuQS7Yvs67NGIZc/BNhXEfxxIOz4vvdMFI2nZN3C8HomM5Mz0iWhDumoOHyNZQ//g0cL0Kvay8DraRJeHp+r0bD8LHyPZc="
+    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp:$FTP"
 
 notifications:
   email:
