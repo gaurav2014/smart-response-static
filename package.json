@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
       "bower": "1.3.3",
-      "travis-encrypt": "0.3.0"
+      "travis-encrypt": "0.3.0",
+      "jsftp": "1.3.0"
   },
   "devDependencies": {
     "grunt": "0.4.1",
