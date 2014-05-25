@@ -11,12 +11,18 @@ var config = {
     exclude: ['.git', '.idea', 'tmp/*']
 }
 
+config.continueOnError = true;
 
+ftpDeploy.on('upload-error', function (data) {
+    console.log(data.err); // data will also include filename, relativePath, and other goodies
+});
 
 ftpDeploy.deploy(config, function(err) {
     if (err) console.log(err)
     else console.log('finished');
 });
+
+
 
 
 
