@@ -314,6 +314,22 @@ h2{
     background-color:rgb(237, 238, 239);
 }
 
+.inside aside .table-bordered > thead > tr > th{
+    background-color:transparent;
+    border-top:none;
+    border-bottom:none;
+    width:50%;
+}
+
+
+.inside aside .table-bordered > tbody > tr:first-child > td{
+    border-top:none;
+}
+
+ul.services li{
+  margin-bottom:20px;
+}
+
 /*********************************** RULES ***********************************************/
 
 .medium-grey{
@@ -328,6 +344,18 @@ h2{
     text-align: left;
 }
 
+.align-center{
+    text-align: center;
+}
+
+.padding-none{
+    padding:0;
+}
+
+
+.margin-none{
+    margin:0;
+}
 
 /*********************************** TABS ******************************************************/
 
