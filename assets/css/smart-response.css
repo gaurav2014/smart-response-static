@@ -309,6 +309,26 @@ h2{
     text-transform: capitalize;
 }
 
+/*********************************** INSIDE PAGES ***********************************************/
+.inside #content{
+    background-color:rgb(237, 238, 239);
+}
+
+/*********************************** RULES ***********************************************/
+
+.medium-grey{
+    background-color:rgb(77, 77, 77);
+}
+
+.border-top{
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.align-left{
+    text-align: left;
+}
+
+
 /*********************************** TABS ******************************************************/
 
 .tab:after {
@@ -324,6 +344,115 @@ h2{
     -ms-transform: skew(40deg);
     transform: skew(40deg);
 }
+
+.parallelogram{
+    width:225px;
+    background-color:rgb(42, 168, 238);
+    margin-right:3px;
+    position:relative;
+    /* Skew */
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+
+}
+
+
+.parallelogram.active{
+    margin-right:5px;
+}
+
+.parallelogram:first-child:before{
+    /* Un-Skew */
+    content:"";
+    position:absolute;
+    background-color:rgb(42, 168, 238);
+    top:0;
+    left: -5px;
+    bottom: 0;
+    width: 24px;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    transform: skew(-20deg);
+}
+
+.parallelogram.active,
+.parallelogram.active:first-child:before{
+    background-color:rgb(255, 241, 0);
+    border:none;
+}
+
+.nav-tabs{
+    border:none;
+    margin-left:4px;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:visited,
+.nav-tabs > li > a:hover{
+    color:rgb(237, 238, 239);
+    font-size:19px;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
+    background-color:transparent;
+    line-height: 7px;
+    border:none;
+    padding-top:15px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:visited,
+.nav-tabs > li.active > a:hover{
+    border:none;
+    background-color:transparent;
+}
+
+
+.breadcrumb{
+    background-color:transparent;
+    margin-bottom:10px;
+}
+
+
+.table,
+.table th{
+    text-align:center;
+}
+
+.table th{
+    font-weight:bold;
+    font-size:14px;
+    text-transform: capitalize;
+    background-color: rgb(217, 218, 218);
+}
+
+.table td{
+    font-size:15px;
+}
+
+.table td ul{
+    list-style-type: none;
+    margin-left:10px;
+    padding-left:0;
+}
+
+.table td ul li{
+    text-transform: capitalize;
+}
+
+.table .btn{
+    font-size:16px;
+}
+
+
+.table > tbody > tr > td, .table > tfoot > tr > td {
+    padding:10px;
+}
+
 
 /*********************************** MEDIA QUERIES ******************************************************/
 
