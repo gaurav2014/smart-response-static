@@ -76,7 +76,7 @@ ul.inline-list li {
     overflow:hidden;
     margin-top:30px;
     padding-left:0;
-    display:none;
+    display:block;
 }
 
 #quickNav a,
@@ -147,6 +147,20 @@ p.pageTitle a:active{
 
 #site-search-container{
     line-height:1px;
+}
+
+.glyphicon-search {
+    position: absolute;
+    right: 0;
+    padding: 12px 27px;
+    background-color:transparent;
+    border:none;
+}
+
+.glyphicon-search:focus,
+.glyphicon-search:active{
+    border:none;
+    outline:none;
 }
 
 #site-search{
@@ -313,10 +327,30 @@ h2{
 
 /*********************************** MEDIA QUERIES ******************************************************/
 
+@media (max-width:767px){
+    p.pageTitle{
+        font-size: 3em;
+    }
+    #quickNav{
+        display:none;
+    }
+}
+
 @media (min-width: 768px){
 
     #utility-links{
         padding-left:0;
+    }
+
+    #utility-links > li >  .utility-link,
+    #utility-links > li >  .utility-link:hover,
+    #utility-links > li >  .utility-link:visited,
+    #utility-links > li >  .utility-link:active{
+        color:rgb(213, 213, 213);
+        padding-left:0;
+
+        padding-top:15px;
+        font-size:18px;
     }
 
     #footer{
@@ -339,11 +373,19 @@ h2{
 
 }
 
-@media (min-width: 1190px){
-    #quickNav{
-        display: block;
+
+@media (max-width: 991px){
+    #utility-links > li >  .utility-link{
+        font-size:13px;
     }
 
+    .btn-smart-response {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 1190px){
     #footer{
         height: 60px;
     }
