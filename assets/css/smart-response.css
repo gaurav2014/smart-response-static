@@ -314,6 +314,19 @@ h2{
     background-color:rgb(237, 238, 239);
 }
 
+#organizationPane .table th{
+    font-size:16px;
+}
+
+#organizationPane .table td{
+    font-size:18px;
+}
+
+#organizationPane .table li span.text{
+    width:175px;
+    display:inline-block;
+}
+
 .inside aside table > thead > tr > th{
     background-color:transparent;
     border-top:none;
@@ -336,8 +349,27 @@ h2{
 }
 
 ul.services li{
-  margin-bottom:20px;
+    margin-bottom:20px;
+    position:relative;
 }
+
+/*********************************** D3 CHARTS ***********************************************/
+
+.chart{
+    position:absolute;
+    right:0;
+}
+
+.chart div {
+    font: 10px sans-serif;
+    background-color: steelblue;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    color: white;
+    max-width:93px;
+}
+
 
 /*********************************** RULES ***********************************************/
 
