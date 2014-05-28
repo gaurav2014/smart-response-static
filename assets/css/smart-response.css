@@ -314,16 +314,25 @@ h2{
     background-color:rgb(237, 238, 239);
 }
 
-.inside aside .table-bordered > thead > tr > th{
+.inside aside table > thead > tr > th{
     background-color:transparent;
     border-top:none;
     border-bottom:none;
     width:50%;
 }
 
+.inside aside table > thead > tr > th:first-child,
+.inside aside table > tbody > tr > td:first-child{
+    border-right:1px solid rgb(237, 238, 239);
+}
 
-.inside aside .table-bordered > tbody > tr:first-child > td{
+.inside aside table > tbody > tr > td{
     border-top:none;
+}
+
+.inside aside table > tr > th,
+.inside aside table > tr > td{
+    font-size:15px;
 }
 
 ul.services li{
