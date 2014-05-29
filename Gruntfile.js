@@ -14,11 +14,24 @@ module.exports = function(grunt) {
                     {expand: true, src: ['assets/**'], dest: 'dist/'}
                 ]
             }
+        },
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: grunt.option( "host" ),
+                    username:  grunt.option( "username" ),
+                    password:  grunt.option( "password" )
+                },
+                src: 'dist',
+                dest:  grunt.option( "branch" )
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.registerTask('default', ['jshint','copy']);
+    grunt.registerTask('ftp-deploy',['ftp-deploy']);
 
 };

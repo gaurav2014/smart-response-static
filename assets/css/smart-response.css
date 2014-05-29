@@ -76,7 +76,7 @@ ul.inline-list li {
     overflow:hidden;
     margin-top:30px;
     padding-left:0;
-    display:none;
+    display:block;
 }
 
 #quickNav a,
@@ -147,6 +147,20 @@ p.pageTitle a:active{
 
 #site-search-container{
     line-height:1px;
+}
+
+.glyphicon-search {
+    position: absolute;
+    right: 0;
+    padding: 12px 27px;
+    background-color:transparent;
+    border:none;
+}
+
+.glyphicon-search:focus,
+.glyphicon-search:active{
+    border:none;
+    outline:none;
 }
 
 #site-search{
@@ -295,6 +309,101 @@ h2{
     text-transform: capitalize;
 }
 
+/*********************************** INSIDE PAGES ***********************************************/
+.inside #content{
+    background-color:rgb(237, 238, 239);
+}
+
+#organizationPane .table th{
+    font-size:16px;
+}
+
+#organizationPane .table td{
+    font-size:18px;
+}
+
+#organizationPane .table li span.text{
+    width:175px;
+    display:inline-block;
+}
+
+.inside aside table > thead > tr > th{
+    background-color:transparent;
+    border-top:none;
+    border-bottom:none;
+    width:50%;
+}
+
+.inside aside table > thead > tr > th:first-child,
+.inside aside table > tbody > tr > td:first-child{
+    border-right:1px solid rgb(237, 238, 239);
+}
+
+.inside aside table > tbody > tr > td{
+    border-top:none;
+}
+
+.inside aside table > tr > th,
+.inside aside table > tr > td{
+    font-size:15px;
+}
+
+ul.services li{
+    margin-bottom:20px;
+    position:relative;
+}
+
+/*********************************** D3 CHARTS ***********************************************/
+
+
+.chart{
+    width:95px;
+    background-color:rgb(187, 187, 187);
+    position:absolute;
+    right:0;
+}
+
+.chart div {
+    font: 10px sans-serif;
+    background-color: rgb(124, 124, 124);
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    color: white;
+    height:17px;
+    line-height:17px;
+    padding-right:4px;
+    box-sizing:border-box;
+}
+
+
+/*********************************** RULES ***********************************************/
+
+.medium-grey{
+    background-color:rgb(77, 77, 77);
+}
+
+.border-top{
+    border-top: 2px solid rgb(255, 255, 255);
+}
+
+.align-left{
+    text-align: left;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.padding-none{
+    padding:0;
+}
+
+
+.margin-none{
+    margin:0;
+}
+
 /*********************************** TABS ******************************************************/
 
 .tab:after {
@@ -311,12 +420,141 @@ h2{
     transform: skew(40deg);
 }
 
+.parallelogram{
+    width:225px;
+    background-color:rgb(42, 168, 238);
+    margin-right:3px;
+    position:relative;
+    /* Skew */
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+
+}
+
+
+.parallelogram.active{
+    margin-right:5px;
+}
+
+.parallelogram:first-child:before{
+    /* Un-Skew */
+    content:"";
+    position:absolute;
+    background-color:rgb(42, 168, 238);
+    top:0;
+    left: -5px;
+    bottom: 0;
+    width: 24px;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    transform: skew(-20deg);
+}
+
+.parallelogram.active,
+.parallelogram.active:first-child:before{
+    background-color:rgb(255, 241, 0);
+    border:none;
+}
+
+.nav-tabs{
+    border:none;
+    margin-left:4px;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:visited,
+.nav-tabs > li > a:hover{
+    color:rgb(237, 238, 239);
+    font-size:19px;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
+    background-color:transparent;
+    line-height: 7px;
+    border:none;
+    padding-top:15px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:visited,
+.nav-tabs > li.active > a:hover{
+    border:none;
+    background-color:transparent;
+}
+
+
+.breadcrumb{
+    background-color:transparent;
+    margin-bottom:10px;
+}
+
+
+.table,
+.table th{
+    text-align:center;
+}
+
+.table th{
+    font-weight:bold;
+    font-size:14px;
+    text-transform: capitalize;
+    background-color: rgb(217, 218, 218);
+}
+
+.table td{
+    font-size:15px;
+}
+
+.table td ul{
+    list-style-type: none;
+    margin-left:10px;
+    padding-left:0;
+}
+
+.table td ul li{
+    text-transform: capitalize;
+}
+
+.table .btn{
+    font-size:16px;
+}
+
+
+.table > tbody > tr > td, .table > tfoot > tr > td {
+    padding:10px;
+}
+
+
 /*********************************** MEDIA QUERIES ******************************************************/
+
+@media (max-width:767px){
+    p.pageTitle{
+        font-size: 3em;
+    }
+    #quickNav{
+        display:none;
+    }
+}
 
 @media (min-width: 768px){
 
     #utility-links{
         padding-left:0;
+    }
+
+    #utility-links > li >  .utility-link,
+    #utility-links > li >  .utility-link:hover,
+    #utility-links > li >  .utility-link:visited,
+    #utility-links > li >  .utility-link:active{
+        color:rgb(213, 213, 213);
+        padding-left:0;
+
+        padding-top:15px;
+        font-size:18px;
     }
 
     #footer{
@@ -339,11 +577,19 @@ h2{
 
 }
 
-@media (min-width: 1190px){
-    #quickNav{
-        display: block;
+
+@media (max-width: 991px){
+    #utility-links > li >  .utility-link{
+        font-size:13px;
     }
 
+    .btn-smart-response {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 1190px){
     #footer{
         height: 60px;
     }

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- META Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Smart Response 2.0 Static Markup</title>
+
+    <!-- favicon and stylesheets -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="assets/js/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/libs/FlexSlider-version-2.2/flexslider.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/smart-response.css" />
+</head>
+<body class="inside">
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <div class="navbar" role="navigation">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                        <div class="row">
+                            <p class="col-xs-12 col-sm-8 col-md-7 col-lg-5 pageTitle">
+                                <a href="/"><span>SmartResponse</span>.org</a>
+                            </p>
+
+                            <ul id="quickNav" class="col-xs-6 col-sm-4 col-md-5 col-lg-7 inline-list">
+                                <li><a class="earthquakes" href="/">earthquakes</a></li>
+                                <li><a class="tsunamis" href="/">tsunamis</a></li>
+                                <li><a class="fires" href="/">fires</a></li>
+                                <li><a class="hurricanes" href="/">hurricanes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-10 col-sm-4 col-md-4 col-lg-3">
+                        <div class="row">
+                            <div id="site-search-container" class="col-xs-10  col-md-12">
+                                <label for="site-search"></label>
+                                <form>
+                                    <input type="text" name="site-search" id="site-search" class="form-control">
+                                    <button type="submit" class="glyphicon glyphicon-search"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <ul id="utility-links" class="nav navbar-nav col-xs-12 col-md-12" role="navigation">
+                                    <li><a class="utility-link login" href="#">Login</a></li>
+                                    <li><a class="utility-link subscribe" href="#">Subscribe</a></li>
+                                    <li><button type="button" class="btn btn-smart-response navbar-btn">Donate</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Secondary Nav
+    ================================================== -->
+    <div id="secondary-nav" class="medium-grey">
+       <div class="container">
+           <div class="row">
+                <div class="col-lg-12">
+                    <form class="row">
+                        <div class="col-lg-3">
+                            <select>
+                                <option value="default">Search by country</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <select>
+                                <option value="default">Search by disaster</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div>
+                    </form>
+                </div>
+           </div>
+       </div>
+    </div>
+
+    <!-- Page Cover
+    ================================================== -->
+    <!--<div id="pageCover" class="progress progress-striped active animated">
+        <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>-->
+
+
+    <!-- ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Countries</a></li>
+                    <li class="active"><a href="#"><strong>USA</strong></a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                    <li class="active parallelogram"><a href="#organizationPane" data-toggle="tab">Organization</a></li>
+                    <li class="parallelogram" ><a href="#disasterPane" data-toggle="tab">Disaster</a></li>
+                    <li class="parallelogram" ><a href="#backgroundPane" data-toggle="tab">Background</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active fade in" id="organizationPane">
+                        <div class="medium-grey border-top">
+                            <form>
+                                <fieldset>
+                                    <legend>Choose to compare</legend>
+                                    <ul class="inline-list">
+                                        <li><label><input type="checkbox" value="" />money raised</label></li>
+                                        <li><label><input type="checkbox" value="" />services provided</label></li>
+                                        <li><label><input type="checkbox" value="" />headquarters location</label></li>
+                                        <li><label><input type="checkbox" value="" />overall annual budget</label></li>
+                                        <li><label><input type="checkbox" value="" />staff size</label></li>
+                                    </ul>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered">
+                                <colgroup>
+                                    <col width="30%" />
+                                    <col width="13%" />
+                                    <col width="40%" />
+                                    <col width="17%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>organization name</th>
+                                        <th>staff size</th>
+                                        <th>services provided</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-left">Gleaning for the World, Inc.</td>
+                                        <td>14</td>
+                                        <td class="align-left">
+                                            <ul class="services">
+                                                <li><span class="text">cleanup</span><span class="chart"></span></li>
+                                                <li><span class="text">food item distribution</span><span class="chart"></span></li>
+                                                <li><span class="text">new furniture</span><span class="chart"></span></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <p><button type="button" class="btn btn-primary btn-sm">Donate</button></p>
+                                            <p><a href="#">Learn More</a></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-left">Church World Service</td>
+                                        <td>1000</td>
+                                        <td class="align-left">
+                                            <ul class="services">
+                                                <li><span class="text">infrastructure development</span><span class="chart"></span></li>
+                                                <li><span class="text">long term recovery</span><span class="chart"></span></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <p><button type="button" class="btn btn-primary btn-sm">Donate</button></p>
+                                            <p><a href="#">Learn More</a></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--/pane1-->
+                    <div class="tab-pane fade" id="disasterPane">
+                        disaster pane
+                    </div>
+                    <!--/pane2-->
+                    <div class="tab-pane fade" id="backgroundPane">
+                        background pane
+                    </div>
+                    <!--/pane3-->
+                </div>
+                <!-- /tab-content -->
+            </div>
+            <div class="col-lg-1"><!--gutter-->&nbsp;</div>
+            <div class="col-lg-3">
+                <aside class="align-center">
+                    <h4>USA Overview</h4>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Types of Aid &amp; Breakdown</div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Workers on the ground</div>
+                        <div class="panel-body padding-none">
+                            <table class="table margin-none">
+                                <thead>
+                                    <tr>
+                                        <th>paid</th>
+                                        <th>volunteer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Total Groups</div>
+                        <div class="panel-body padding-none">
+                            <table class="table margin-none">
+                                <thead>
+                                <tr>
+                                    <th>local</th>
+                                    <th>international</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div><!-- /.container -->
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <ul class="nav nav-justified" role="navigation">
+                <li class="footer-list-item"><a href="#" class="footer-links">what we do</a></li>
+                <li class="footer-list-item"><a href="#" class="footer-links">about us</a></li>
+                <li class="footer-list-item"><a href="#" class="footer-links">get involved</a></li>
+                <li class="footer-list-item"><a href="#" class="footer-links">news &amp; media</a></li>
+                <li class="footer-list-item"><a href="#" class="footer-links">blogs</a></li>
+                <li class="footer-list-item"><a href="#" class="footer-links">contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script data-main="assets/js/app" src="assets/js/require.js"></script>
+</body>
+</html>
