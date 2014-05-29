@@ -24,6 +24,7 @@
     "backbone": "*",
     "bootstrap": "*",
     "modernizr": "*",
-    "requirejs-bower": "*"
+    "requirejs-bower": "*",
+    "d3": "3.4.8"
   } 
 }
