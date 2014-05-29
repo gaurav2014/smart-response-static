@@ -355,19 +355,25 @@ ul.services li{
 
 /*********************************** D3 CHARTS ***********************************************/
 
+
 .chart{
+    width:95px;
+    background-color:rgb(187, 187, 187);
     position:absolute;
     right:0;
 }
 
 .chart div {
     font: 10px sans-serif;
-    background-color: steelblue;
+    background-color: rgb(124, 124, 124);
     text-align: right;
-    padding: 3px;
-    margin: 1px;
+    padding: 0;
+    margin: 0;
     color: white;
-    max-width:93px;
+    height:17px;
+    line-height:17px;
+    padding-right:4px;
+    box-sizing:border-box;
 }
 
 
