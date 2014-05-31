@@ -353,6 +353,10 @@ ul.services li{
     position:relative;
 }
 
+ul.services li.margin-none{
+    margin-bottom:0;
+}
+
 /*********************************** D3 CHARTS ***********************************************/
 
 
@@ -513,6 +517,7 @@ ul.services li{
     list-style-type: none;
     margin-left:10px;
     padding-left:0;
+    padding-right:10px;
 }
 
 .table td ul li{
@@ -520,7 +525,10 @@ ul.services li{
 }
 
 .table .btn{
-    font-size:16px;
+    font-size:20px;
+    line-height:20px;
+    padding: 5px 0 0 0;
+    width: 90%;
 }
 
 
@@ -528,6 +536,36 @@ ul.services li{
     padding:10px;
 }
 
+.table > tbody > tr > td.padding-none{
+    padding:0;
+    padding-top:10px;
+}
+
+.profile-data .panel-group .panel,
+.profile-data .panel-default > .panel-heading + .panel-collapse .panel-body,
+.profile-data .panel-default > .panel-heading{
+    border:none;
+    background-color:transparent;
+    padding:0;
+}
+
+.profile-data .panel-title{
+    text-align:center;
+}
+
+.profile-data .panel-title > a {
+    color: rgb(66, 139, 202);
+}
+
+
+.learn-more{
+    margin-top:35px;
+}
+
+.learn-more a{
+    color:rgb(39, 38, 38);
+    font-size:19px;
+}
 
 /*********************************** MEDIA QUERIES ******************************************************/
 
