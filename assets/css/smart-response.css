@@ -53,6 +53,9 @@ body{
     color:rgb(38, 38, 38);
 }
 
+#secondary-nav{
+    padding:10px 0;
+}
 
 .btn-smart-response{
     background-color:rgb(255, 242, 0);
@@ -353,6 +356,10 @@ ul.services li{
     position:relative;
 }
 
+ul.services li.margin-none{
+    margin-bottom:0;
+}
+
 /*********************************** D3 CHARTS ***********************************************/
 
 
@@ -394,6 +401,10 @@ ul.services li{
 .align-center{
     text-align: center;
 }
+.padding{
+    padding:10px;
+    box-sizing:border-box;
+}
 
 .padding-none{
     padding:0;
@@ -403,6 +414,71 @@ ul.services li{
 .margin-none{
     margin:0;
 }
+
+.margin-bottom{
+    margin-bottom:10px;
+}
+
+.margin-bottom-5{
+    margin-bottom:5px;
+}
+
+
+/*********************************** BREAD CRUMBS ***********************************************/
+
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: ">";
+    font-family:TradeGothic;
+}
+
+.breadcrumb > li.active {
+    font-family:TradeGothicBold;
+}
+
+
+/*********************************** FORMS ***********************************************/
+
+.form-horizontal .form-group{
+    margin:0;
+    padding:0;
+}
+
+
+legend{
+    border:none;
+    font-size:16px;
+    color:rgb(237, 238, 239);
+    margin:0;
+}
+
+fieldset{
+    box-sizing:border-box;
+    padding:0;
+}
+
+label{
+    color:rgb(255, 255, 255);
+    font-size:14px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 2px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+
+select{
+    border:1px solid black;
+    background-color:rgb(248, 248, 248);
+    width:100%;
+    height:38px;
+    border-radius:0 !important;
+    position:relative;
+}
+
+
 
 /*********************************** TABS ******************************************************/
 
@@ -513,6 +589,7 @@ ul.services li{
     list-style-type: none;
     margin-left:10px;
     padding-left:0;
+    padding-right:10px;
 }
 
 .table td ul li{
@@ -520,7 +597,10 @@ ul.services li{
 }
 
 .table .btn{
-    font-size:16px;
+    font-size:20px;
+    line-height:20px;
+    padding: 5px 0 0 0;
+    width: 90%;
 }
 
 
@@ -528,6 +608,36 @@ ul.services li{
     padding:10px;
 }
 
+.table > tbody > tr > td.padding-none{
+    padding:0;
+    padding-top:10px;
+}
+
+.profile-data .panel-group .panel,
+.profile-data .panel-default > .panel-heading + .panel-collapse .panel-body,
+.profile-data .panel-default > .panel-heading{
+    border:none;
+    background-color:transparent;
+    padding:0;
+}
+
+.profile-data .panel-title{
+    text-align:center;
+}
+
+.profile-data .panel-title > a {
+    color: rgb(66, 139, 202);
+}
+
+
+.learn-more{
+    margin-top:35px;
+}
+
+.learn-more a{
+    color:rgb(39, 38, 38);
+    font-size:19px;
+}
 
 /*********************************** MEDIA QUERIES ******************************************************/
 

@@ -114,7 +114,7 @@
                 <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Countries</a></li>
-                    <li class="active"><a href="#"><strong>USA</strong></a></li>
+                    <li class="active"><a href="#">USA</a></li>
                 </ol>
             </div>
         </div>
@@ -128,22 +128,36 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active fade in" id="organizationPane">
-                        <div class="medium-grey border-top">
-                            <form>
+                        <div class="medium-grey border-top margin-bottom-5 padding">
+                            <form role="form" class="form-horizontal">
+
                                 <fieldset>
                                     <legend>Choose to compare</legend>
-                                    <ul class="inline-list">
-                                        <li><label><input type="checkbox" value="" />money raised</label></li>
-                                        <li><label><input type="checkbox" value="" />services provided</label></li>
-                                        <li><label><input type="checkbox" value="" />headquarters location</label></li>
-                                        <li><label><input type="checkbox" value="" />overall annual budget</label></li>
-                                        <li><label><input type="checkbox" value="" />staff size</label></li>
-                                    </ul>
+                                    <div class="form-group">
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> Money Raised
+                                        </label>
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox2" value="option2"> Services Provided
+                                        </label>
+                                        <label class="checkbox-inline col-md-3">
+                                            <input type="checkbox" id="inlineCheckbox3" value="option3"> Headquarters Location
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> Money Raised
+                                        </label>
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox2" value="option2"> Services Provided
+                                        </label>
+                                    </div>
                                 </fieldset>
+
                             </form>
                         </div>
                         <div class="table-responsive">
-                            <table class="table table-hover table-bordered">
+                            <table class="table table-hover table-bordered profile-data">
                                 <colgroup>
                                     <col width="30%" />
                                     <col width="13%" />
@@ -162,22 +176,42 @@
                                     <tr>
                                         <td class="align-left">Gleaning for the World, Inc.</td>
                                         <td>14</td>
-                                        <td class="align-left">
+                                        <td class="align-left padding-none">
                                             <ul class="services">
                                                 <li><span class="text">cleanup</span><span class="chart"></span></li>
                                                 <li><span class="text">food item distribution</span><span class="chart"></span></li>
-                                                <li><span class="text">new furniture</span><span class="chart"></span></li>
+                                                <li class="margin-none"><span class="text">new furniture</span><span class="chart"></span></li>
                                             </ul>
+                                            <div class="panel-group margin-none" id="accordion">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                                <span class="glyphicon glyphicon-chevron-down"></span>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseOne" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            <ul class="services">
+                                                                <li><span class="text">cleanup</span><span class="chart"></span></li>
+                                                                <li><span class="text">food item distribution</span><span class="chart"></span></li>
+                                                                <li><span class="text">new furniture</span><span class="chart"></span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </td>
                                         <td>
                                             <p><button type="button" class="btn btn-primary btn-sm">Donate</button></p>
-                                            <p><a href="#">Learn More</a></p>
+                                            <p class="learn-more"><a href="#">Learn More</a></p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="align-left">Church World Service</td>
                                         <td>1000</td>
-                                        <td class="align-left">
+                                        <td class="align-left padding-none">
                                             <ul class="services">
                                                 <li><span class="text">infrastructure development</span><span class="chart"></span></li>
                                                 <li><span class="text">long term recovery</span><span class="chart"></span></li>
@@ -185,7 +219,7 @@
                                         </td>
                                         <td>
                                             <p><button type="button" class="btn btn-primary btn-sm">Donate</button></p>
-                                            <p><a href="#">Learn More</a></p>
+                                            <p class="learn-more"><a href="#">Learn More</a></p>
                                         </td>
                                     </tr>
                                 </tbody>
