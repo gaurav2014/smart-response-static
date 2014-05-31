@@ -398,6 +398,10 @@ ul.services li.margin-none{
 .align-center{
     text-align: center;
 }
+.padding{
+    padding:10px;
+    box-sizing:border-box;
+}
 
 .padding-none{
     padding:0;
@@ -406,6 +410,60 @@ ul.services li.margin-none{
 
 .margin-none{
     margin:0;
+}
+
+.margin-bottom{
+    margin-bottom:10px;
+}
+
+.margin-bottom-5{
+    margin-bottom:5px;
+}
+
+
+/*********************************** BREAD CRUMBS ***********************************************/
+
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: ">";
+    font-family:TradeGothic;
+}
+
+.breadcrumb > li.active {
+    font-family:TradeGothicBold;
+}
+
+
+/*********************************** FORMS ***********************************************/
+
+.form-horizontal .form-group{
+    margin:0;
+    padding:0;
+}
+
+
+legend{
+    border:none;
+    font-size:16px;
+    color:rgb(237, 238, 239);
+    margin:0;
+}
+
+fieldset{
+    box-sizing:border-box;
+    padding:0;
+}
+
+label{
+    color:rgb(255, 255, 255);
+    font-size:14px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 2px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
 }
 
 /*********************************** TABS ******************************************************/

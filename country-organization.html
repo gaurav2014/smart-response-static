@@ -114,7 +114,7 @@
                 <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Countries</a></li>
-                    <li class="active"><a href="#"><strong>USA</strong></a></li>
+                    <li class="active"><a href="#">USA</a></li>
                 </ol>
             </div>
         </div>
@@ -128,18 +128,32 @@
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active fade in" id="organizationPane">
-                        <div class="medium-grey border-top">
-                            <form>
+                        <div class="medium-grey border-top margin-bottom-5 padding">
+                            <form role="form" class="form-horizontal">
+
                                 <fieldset>
                                     <legend>Choose to compare</legend>
-                                    <ul class="inline-list">
-                                        <li><label><input type="checkbox" value="" />money raised</label></li>
-                                        <li><label><input type="checkbox" value="" />services provided</label></li>
-                                        <li><label><input type="checkbox" value="" />headquarters location</label></li>
-                                        <li><label><input type="checkbox" value="" />overall annual budget</label></li>
-                                        <li><label><input type="checkbox" value="" />staff size</label></li>
-                                    </ul>
+                                    <div class="form-group">
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> Money Raised
+                                        </label>
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox2" value="option2"> Services Provided
+                                        </label>
+                                        <label class="checkbox-inline col-md-3">
+                                            <input type="checkbox" id="inlineCheckbox3" value="option3"> Headquarters Location
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> Money Raised
+                                        </label>
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox2" value="option2"> Services Provided
+                                        </label>
+                                    </div>
                                 </fieldset>
+
                             </form>
                         </div>
                         <div class="table-responsive">
