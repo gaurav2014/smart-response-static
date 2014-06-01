@@ -114,36 +114,54 @@
                 <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Countries</a></li>
-                    <li class="active"><a href="#"><strong>USA</strong></a></li>
+                    <li class="active"><a href="#">USA</a></li>
                 </ol>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
                     <li class="active parallelogram"><a href="#organizationPane" data-toggle="tab">Organization</a></li>
                     <li class="parallelogram" ><a href="#disasterPane" data-toggle="tab">Disaster</a></li>
                     <li class="parallelogram" ><a href="#backgroundPane" data-toggle="tab">Background</a></li>
                 </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active fade in" id="organizationPane">
-                        <div class="medium-grey border-top">
-                            <form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="tab-content">
+                <div class="tab-pane active fade in" id="organizationPane">
+                    <div class="col-lg-8">
+                        <div class="medium-grey border-top margin-bottom-5 padding">
+                            <form role="form" class="form-horizontal">
+
                                 <fieldset>
                                     <legend>Choose to compare</legend>
-                                    <ul class="inline-list">
-                                        <li><label><input type="checkbox" value="" />money raised</label></li>
-                                        <li><label><input type="checkbox" value="" />services provided</label></li>
-                                        <li><label><input type="checkbox" value="" />headquarters location</label></li>
-                                        <li><label><input type="checkbox" value="" />overall annual budget</label></li>
-                                        <li><label><input type="checkbox" value="" />staff size</label></li>
-                                    </ul>
+                                    <div class="form-group">
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox1" value="option1"> Money Raised
+                                        </label>
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox2" value="option2"> Services Provided
+                                        </label>
+                                        <label class="checkbox-inline col-md-3">
+                                            <input type="checkbox" id="inlineCheckbox3" value="option3"> Headquarters Location
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox4" value="option4">Overall Annual Budget
+                                        </label>
+                                        <label class="checkbox-inline col-md-4">
+                                            <input type="checkbox" id="inlineCheckbox5" value="option4"> Staff Size
+                                        </label>
+                                    </div>
                                 </fieldset>
+
                             </form>
                         </div>
                         <div class="table-responsive">
-                            <table class="table table-hover table-bordered">
+                            <table class="table table-hover table-bordered profile-data">
                                 <colgroup>
                                     <col width="30%" />
                                     <col width="13%" />
@@ -162,22 +180,42 @@
                                     <tr>
                                         <td class="align-left">Gleaning for the World, Inc.</td>
                                         <td>14</td>
-                                        <td class="align-left">
+                                        <td class="align-left padding-none">
                                             <ul class="services">
                                                 <li><span class="text">cleanup</span><span class="chart"></span></li>
                                                 <li><span class="text">food item distribution</span><span class="chart"></span></li>
-                                                <li><span class="text">new furniture</span><span class="chart"></span></li>
+                                                <li class="margin-none"><span class="text">new furniture</span><span class="chart"></span></li>
                                             </ul>
+                                            <div class="panel-group margin-none" id="accordion">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                                <span class="glyphicon glyphicon-chevron-down"></span>
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseOne" class="panel-collapse collapse">
+                                                        <div class="panel-body">
+                                                            <ul class="services">
+                                                                <li><span class="text">cleanup</span><span class="chart"></span></li>
+                                                                <li><span class="text">food item distribution</span><span class="chart"></span></li>
+                                                                <li><span class="text">new furniture</span><span class="chart"></span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </td>
                                         <td>
                                             <p><button type="button" class="btn btn-primary btn-sm">Donate</button></p>
-                                            <p><a href="#">Learn More</a></p>
+                                            <p class="learn-more"><a href="#">Learn More</a></p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="align-left">Church World Service</td>
                                         <td>1000</td>
-                                        <td class="align-left">
+                                        <td class="align-left padding-none">
                                             <ul class="services">
                                                 <li><span class="text">infrastructure development</span><span class="chart"></span></li>
                                                 <li><span class="text">long term recovery</span><span class="chart"></span></li>
@@ -185,83 +223,181 @@
                                         </td>
                                         <td>
                                             <p><button type="button" class="btn btn-primary btn-sm">Donate</button></p>
-                                            <p><a href="#">Learn More</a></p>
+                                            <p class="learn-more"><a href="#">Learn More</a></p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <!--/pane1-->
-                    <div class="tab-pane fade" id="disasterPane">
-                        disaster pane
+                    <div class="col-lg-1"><!--gutter-->&nbsp;</div>
+                    <div class="col-lg-3">
+                        <aside class="align-center">
+                            <h4>USA Overview</h4>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Types of Aid &amp; Breakdown</div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Workers on the ground</div>
+                                <div class="panel-body padding-none">
+                                    <table class="table margin-none">
+                                        <thead>
+                                        <tr>
+                                            <th>paid</th>
+                                            <th>volunteer</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Total Groups</div>
+                                <div class="panel-body padding-none">
+                                    <table class="table margin-none">
+                                        <thead>
+                                        <tr>
+                                            <th>local</th>
+                                            <th>international</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </aside>
                     </div>
-                    <!--/pane2-->
-                    <div class="tab-pane fade" id="backgroundPane">
+                </div>
+                <!--/pane1-->
+                <div class="tab-pane fade" id="disasterPane">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="disaster-year col-lg-8">
+                                <p>2013</p>
+                            </div>
+                            <div class="disaster-filter col-lg-4">
+                                <p>filter</p>
+                            </div>
+                        </div>
+                        <div class="row disasters">
+                            <div class="disaster sandy col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <img class="thumbnail" src="assets/images/superstorm-sandy.jpg" alt="image of superstorm sandy damage" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <h3>superstorm sandy</h3>
+                                        <p>Hurricane Sandy combined with a noreaster when it came ashore in Atlantic City resulting storm caused large amounts of wind damage and flooding from storm surge and heavy rains.</p>
+                                        <ul>
+                                            <li>Number of organizations:</li>
+                                            <li>Number of $ raised:</li>
+                                            <li>Number of staff responding:</li>
+                                        </ul>
+                                    </div>
+                                    <div class="utilities">
+                                        <div class="navbar">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown">organization <span class="caret"></span></button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" class="btn btn-default navbar-btn">share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/disaster-->
+                            <div class="disaster sandy col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <img class="thumbnail" src="assets/images/superstorm-sandy.jpg" alt="image of superstorm sandy damage" />
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <h3>haiti earthquake</h3>
+                                        <p>Hurricane Sandy combined with a noreaster when it came ashore in Atlantic City resulting storm caused large amounts of wind damage and flooding from storm surge and heavy rains.</p>
+                                        <ul>
+                                            <li>Number of organizations:</li>
+                                            <li>Number of $ raised:</li>
+                                            <li>Number of staff responding:</li>
+                                        </ul>
+                                    </div>
+                                    <div class="utilities">
+                                        <div class="navbar">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown">organization <span class="caret"></span></button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a></li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" class="btn btn-default navbar-btn">share</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--/disaster-->
+
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                        <aside>
+                            <iframe class="margin-bottom-20" width="270" height="509" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=United+States&amp;aq=0&amp;oq=unite&amp;sll=34.049033,-118.259089&amp;sspn=0.005085,0.009645&amp;ie=UTF8&amp;hq=&amp;hnear=United+States&amp;t=m&amp;z=4&amp;ll=37.09024,-95.712891&amp;output=embed"></iframe>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs">
+                                        <li class="active parallelogram"><a href="#twiiter" data-toggle="tab">Twitter Feed</a></li>
+                                        <li class="parallelogram" ><a href="#google" data-toggle="tab">Google News</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+                <!--/pane2-->
+                <div class="tab-pane fade" id="backgroundPane">
+                    <div class="col-lg-8">
                         background pane
                     </div>
-                    <!--/pane3-->
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3">
+                        <iframe class="margin-bottom-20" width="270" height="509" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=United+States&amp;aq=0&amp;oq=unite&amp;sll=34.049033,-118.259089&amp;sspn=0.005085,0.009645&amp;ie=UTF8&amp;hq=&amp;hnear=United+States&amp;t=m&amp;z=4&amp;ll=37.09024,-95.712891&amp;output=embed"></iframe>
+                    </div>
                 </div>
-                <!-- /tab-content -->
+                <!--/pane3-->
             </div>
-            <div class="col-lg-1"><!--gutter-->&nbsp;</div>
-            <div class="col-lg-3">
-                <aside class="align-center">
-                    <h4>USA Overview</h4>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Types of Aid &amp; Breakdown</div>
-                        <div class="panel-body">
-                            Panel content
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Workers on the ground</div>
-                        <div class="panel-body padding-none">
-                            <table class="table margin-none">
-                                <thead>
-                                    <tr>
-                                        <th>paid</th>
-                                        <th>volunteer</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            &nbsp;
-                                        </td>
-                                        <td>
-                                            &nbsp;
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Total Groups</div>
-                        <div class="panel-body padding-none">
-                            <table class="table margin-none">
-                                <thead>
-                                <tr>
-                                    <th>local</th>
-                                    <th>international</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        &nbsp;
-                                    </td>
-                                    <td>
-                                        &nbsp;
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </aside>
-            </div>
+            <!-- /tab-content -->
         </div>
     </div><!-- /.container -->
 

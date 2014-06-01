@@ -35,6 +35,8 @@ require(['framework-config'], function(frameworkConfig){
                     .text(function(d) { return d + '%'; });
             });
 
+
+
         });
 });
 
