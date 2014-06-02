@@ -501,16 +501,28 @@ input[type="radio"], input[type="checkbox"] {
     line-height: normal;
 }
 
-select{
-    border:1px solid black;
-    background-color:rgb(248, 248, 248);
-    width:100%;
-    height:38px;
-    border-radius:0 !important;
-    position:relative;
+
+.styled-select {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background: url(../images/sprite-icons.png) no-repeat 46px -625px rgb(248, 248, 248);
 }
 
-
+.styled-select select {
+    background: transparent;
+    width:100%;
+    height:38px;
+    padding: 9px 12px;
+    font-size: 18px;
+    line-height: 24px;
+    border: 0;
+    border-radius: 0;
+    position:relative;
+    -webkit-appearance: none;
+    color:rgb(122, 122, 122);
+    box-sizing:border-box;
+}
 
 /*********************************** TABS ******************************************************/
 
@@ -541,17 +553,6 @@ select{
 
 }
 
-aside .parallelogram{
-    width:48%;
-}
-
-aside .nav-tabs > li > a,
-aside .nav-tabs > li > a:visited,
-aside .nav-tabs > li > a:hover {
-    font-size:16px;
-}
-
-
 .parallelogram.active{
     margin-right:5px;
 }
@@ -575,6 +576,32 @@ aside .nav-tabs > li > a:hover {
 .parallelogram.active:first-child:before{
     background-color:rgb(255, 241, 0);
     border:none;
+}
+
+
+aside .parallelogram{
+    width:48%;
+    background-color:rgb(218, 218, 218);
+}
+
+aside .parallelogram.active{
+    width:48%;
+    margin-right:3px;
+}
+
+aside .parallelogram:first-child:before{
+    background-color:rgb(218, 218, 218);
+}
+
+aside .parallelogram.active,
+aside .parallelogram.active:first-child:before{
+    background-color:rgb(42, 168, 238);
+}
+
+aside .nav-tabs > li > a,
+aside .nav-tabs > li > a:visited,
+aside .nav-tabs > li > a:hover {
+    font-size:16px;
 }
 
 .nav-tabs{
@@ -607,7 +634,8 @@ aside .nav-tabs > li > a:hover {
 
 .breadcrumb{
     background-color:transparent;
-    margin-bottom:10px;
+    margin:20px 0 10px 0;
+    padding:0;
 }
 
 
