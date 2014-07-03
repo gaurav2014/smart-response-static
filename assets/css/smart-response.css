@@ -777,8 +777,11 @@ aside .nav-tabs > li > a:hover {
 
 .carouselCaption{
     position:absolute;
-    left:18%;
-    top:43%;
+    text-align:center;
+    width:70%;
+    left:30%;
+    margin-left:-15%;
+    top:30%;
     z-index:2;
 }
 .carouselCaption h2{
@@ -797,7 +800,7 @@ aside .nav-tabs > li > a:hover {
 }
 
 .flexslider .slides{
-    min-height:200px;
+    min-height:500px;
 }
 
 
