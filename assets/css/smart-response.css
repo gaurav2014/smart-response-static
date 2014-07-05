@@ -53,6 +53,14 @@ body{
     color:rgb(38, 38, 38);
 }
 
+.alpha{
+    padding-left:0;
+}
+
+.omega{
+    padding-right:0;
+}
+
 #secondary-nav{
     padding:10px 0;
 }
@@ -799,7 +807,7 @@ aside .nav-tabs > li > a:hover {
     height:20px;
     position:absolute;
     top:40%;
-    left:20%;
+    left:25%;
     border-radius:3px;
 }
 
@@ -809,7 +817,7 @@ aside .nav-tabs > li > a:hover {
     width:70%;
     left:30%;
     margin-left:-15%;
-    top:30%;
+    top:47%;
     z-index:2;
 }
 .carouselCaption h2{
@@ -819,12 +827,35 @@ aside .nav-tabs > li > a:hover {
     font-family:TradeGothicLTStd-BdCn20;
 }
 
+.home-search-container{
+    background-color:rgb(0,0,0);
+    padding:9px 0 9px 26px;
+    /*width: 53% !important;*/
+}
+
+.home-search-container select{
+    margin-right:5px;
+    border:0;
+    -webkit-border-top-left-radius:0 !important;
+    border-top-left-radius:0 !important;
+
+}
+
+.home-search-container button{
+    width:90%
+}
+
+.submit-container{
+    width:30% !important;
+}
+
 /*********************************** VENDOR OVERRIDES ******************************************************/
 
 .flexslider{
     margin:0;
     border:none;
     position:relative;
+    max-height:432px;
 }
 
 .flexslider .slides{
@@ -832,12 +863,15 @@ aside .nav-tabs > li > a:hover {
 }
 
 
-.flex-direction-nav,
 .flex-control-paging{
     display:none;
 }
 
+.flex-direction-nav{
 
+}
 
-
+.flex-direction-nav .flex-next {
+    right: 0;
+}
 
