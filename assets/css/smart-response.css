@@ -586,6 +586,30 @@ input[type="radio"], input[type="checkbox"] {
     border:none;
 }
 
+.side-panel-nav-tab li.parallelogram:first-child:before{
+    /* Un-Skew */
+    content:"";
+    position:absolute;
+    background-color:rgb(217, 218, 218);    
+    top:0;
+    left: -5px;
+    bottom: 0;
+    width: 24px;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    transform: skew(-20deg);
+}
+
+.side-panel-nav-tab li.parallelogram.active,
+.side-panel-nav-tab li.parallelogram.active:first-child:before{
+    background-color:rgb(42, 168, 238);
+    border:none;
+}
+.side-panel-nav-tab li.parallelogram{
+	background-color:rgb(217, 218, 218);
+}
+
 
 aside .parallelogram{
     width:48%;
@@ -620,7 +644,7 @@ aside .nav-tabs > li > a:hover {
 .nav-tabs > li > a,
 .nav-tabs > li > a:visited,
 .nav-tabs > li > a:hover{
-    color:rgb(237, 238, 239);
+    color:rgb(85, 85, 85);
     font-size:19px;
     -webkit-transform: skew(-20deg);
     -moz-transform: skew(-20deg);
@@ -873,5 +897,18 @@ aside .nav-tabs > li > a:hover {
 
 .flex-direction-nav .flex-next {
     right: 0;
+}
+
+/**************************************  Twitter Feed ********************88888****************************/
+
+.twitterpane{
+	border: 1px solid rgb(217,218,218);
+	padding:0px 10px 0px 10px;
+}
+
+.twitterpane div {	
+	font-size:13px;	
+	font-weight:bold;
+	float:left;	
 }
 

@@ -8,7 +8,8 @@ define('framework-config',[], function(){
             "vendor": "vendor",
             "libs": "libs",
             "flexslider": "libs/FlexSlider-version-2.2/jquery.flexslider",
-            "d3": "vendor/d3/d3"
+            "d3": "vendor/d3/d3",
+            "widgets": "libs/twitter-feed/widgets"
         },
 
         "shim": {
