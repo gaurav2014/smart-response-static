@@ -14,7 +14,8 @@ require(['framework-config'], function(frameworkConfig){
         'jquery',
         'd3',
         'jquery.bootstrap',
-        'flexslider'
+        'flexslider',
+        'widgets'
     ],
         function($,d3) {
             $('.flexslider').flexslider({
