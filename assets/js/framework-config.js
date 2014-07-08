@@ -7,7 +7,9 @@ define('framework-config',[], function(){
             "underscore": "vendor/underscore/underscore",
             "vendor": "vendor",
             "libs": "libs",
-            "flexslider": "libs/FlexSlider-version-2.2/jquery.flexslider"
+            "flexslider": "libs/FlexSlider-version-2.2/jquery.flexslider",
+            "d3": "vendor/d3/d3",
+            "widgets": "libs/twitter-feed/widgets"
         },
 
         "shim": {

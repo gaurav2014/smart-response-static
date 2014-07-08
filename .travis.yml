@@ -3,11 +3,13 @@ node_js:
   - "0.10"
 env:
   global:
-    - secure: "XOEMhGzqWlQzRicE0RzyHnVtI7YoftC6F6/W3Vj9XYDyjC8luo9MI/uS4qCI6NH6sz7Id5v46xXKzeNRFpoC6jOw9qLO2w+nlBpkHDGvXjChcVs7Edz1CumiwRMaBWWf0E/BWNtdEknmkR+O3z5R/ipovWATEskToZwN65oIwfs="
-    - secure: "b+gpMtLuNhkHBXMxQWRfZ66sXyjnezjt3fTj1dEcScsw4jmrR1VuZzIoMeZnsvNVASv0q/1GoFmGUFyl3tvX8vZBzm0TRzOxfAZCFpo5UwMm4gU0dvrBrWdBq3YnogYEd3wAmv5KOjzzh4/zJnmFRyQkf3WRAGc6i1081oZhHd4="
-    - secure: "Y5aCGwW3Q5osWi16hUiq0EpFgL+ZvwW0+dBPNFyi9+BWvywS6XImLhKcFEceNps8+DKe7ABYsp+FUMvqRisqsmnOnsRcVAclpdRVn/jfDhf45c9xpcOk02LUWV9rDg1bKmR/wI/tKtZB/0tc89QGtDNcFNCunD3v6nMP9uutj98="
+    - "BRANCH=${TRAVIS_BRANCH////-}"
+    - secure: "UCg7lECCNYm/LwUgH9xlHmhAuyag4HAanXe3UKfK8ccWyXbr68CB44bmxE3/oL6gDgJ7blP1RPnU9ewm4FudPKQQfJmutSYgEzZenXZJbD8egIBxshRe4PNNbD5gYbu2tj6cgobL4jweD9i0JHT/tnEp68oUw2E/uA44dA/gcvk="
+    - secure: "UA/CRDbTynqEs5vW4c/JCGLjUDVqzOk9PcejAAFT7JlXWcJTp7fsR0/xzWxqZ3FujpwKG+q+6nfLuLRDQkl25J3c/rK4hRB1sIyyDOOL4poQa1BnPspVNKNn1zLYMxq0jtGuualAH5N9Ye/FAOMSQl9oNL9vYrQyNy3J/5tgZpM="
+    - secure: "b4orxEqKbdT0TtZ5ThLUZwKaaUkDTECjL7fUMSeoSr0tjq/4rIuaLRX5D8NCKz+/0rV21ayjvUWKp+gu8eQkherokvRkJ9RDUXjHlJ7/+KlE2Amq5hF4S1ABaWE40rxNxK46pX7pgtxz56CXWUSbHE1/bPkpJN4D7DMVdjYHhEg="
 after_success:
-    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp:$FTP"
+    - "node index.js $FTP_USER $FTP_PASSWORD treyeckels.com $BRANCH"
+    #- "ftp-deploy --username=$FTP_USER --password=$FTP_PASSWORD --host=$FTP --branch=$BRANCH"
 
 notifications:
   email:
